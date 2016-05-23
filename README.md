@@ -42,7 +42,7 @@ Swift
 ```Swift
 import NCSoundHistogram
 
-NCSoundHistogram soundHistogramView = NCSoundHistogram.initWithFrame(self.view.frame);
+let soundHistogramView = NCSoundHistogram.init(frame: self.view.frame)
 self.view.addSubview(soundHistogramView);
 
 ```

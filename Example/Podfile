@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NCSoundHistogram_Example' do
+  pod 'NCSoundHistogram', :path => '../'
+
+  target 'NCSoundHistogram_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

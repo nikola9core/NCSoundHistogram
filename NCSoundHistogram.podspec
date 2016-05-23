@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NCSoundHistogram'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'Generates histogram view from audio file.'
 
 # This description is used to generate tags and improve search results.
@@ -32,9 +32,9 @@ Subclass of UIView that renders discrete histogram view for a given audio file.
 
   s.source_files = 'NCSoundHistogram/Classes/**/*'
   
-  s.resource_bundles = {
-    'NCSoundHistogram' => ['NCSoundHistogram/Assets/*.m4a']
-  }
+#s.resource_bundles = {
+#   'NCSoundHistogram' => ['NCSoundHistogram/Assets/*.m4a']
+# }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/NCSoundHistogram.svg?style=flat)](http://cocoapods.org/pods/NCSoundHistogram)
 [![Platform](https://img.shields.io/cocoapods/p/NCSoundHistogram.svg?style=flat)](http://cocoapods.org/pods/NCSoundHistogram)
 
+Based on: https://github.com/faviomob/FVSoundWaveDemo
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -22,9 +24,28 @@ it, simply add the following line to your Podfile:
 pod "NCSoundHistogram"
 ```
 
-## Author
+## Usage
 
-Nikola Corlija, nikola9core@yahoo.com
+Objective-C
+```objective-c
+#import "NCSoundHistogram.h"
+
+NCSoundHistogram *soundHistogramView = [[NCSoundHistogram alloc] initWithFrame:self.view.frame];
+[self.view addSubview:soundHistogramView];
+
+NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"audio.m4a" ofType:nil]];
+soundHistogramView.soundURL = url;
+
+```
+
+Swift
+```Swift
+import NCSoundHistogram
+
+NCSoundHistogram soundHistogramView = NCSoundHistogram.initWithFrame(self.view.frame);
+self.view.addSubview(soundHistogramView);
+
+```
 
 ## License
 

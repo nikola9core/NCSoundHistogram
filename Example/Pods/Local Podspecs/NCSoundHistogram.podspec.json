@@ -1,9 +1,9 @@
 {
   "name": "NCSoundHistogram",
   "version": "0.1.0",
-  "summary": "A short description of NCSoundHistogram.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/NCSoundHistogram",
+  "summary": "Generates histogram view from audio file.",
+  "description": "Subclass of UIView that renders discrete histogram view for a given audio file.",
+  "homepage": "https://github.com/nikola9core/NCSoundHistogram",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,16 @@
     "Nikola Corlija": "nikola9core@yahoo.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/NCSoundHistogram.git",
+    "git": "https://github.com/nikola9core/NCSoundHistogram.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "NCSoundHistogram/Classes/**/*"
+  "source_files": "NCSoundHistogram/Classes/**/*",
+  "resource_bundles": {
+    "NCSoundHistogram": [
+      "NCSoundHistogram/Assets/*.m4a"
+    ]
+  }
 }

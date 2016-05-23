@@ -32,9 +32,9 @@ Subclass of UIView that renders discrete histogram view for a given audio file.
 
   s.source_files = 'NCSoundHistogram/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'NCSoundHistogram' => ['NCSoundHistogram/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'NCSoundHistogram' => ['NCSoundHistogram/Assets/*.m4a']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

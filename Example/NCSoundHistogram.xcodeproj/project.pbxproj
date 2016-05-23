@@ -23,6 +23,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9C47A71991698A469EF8214A /* Pods_NCSoundHistogram_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C37E942CF55462EA3363B0 /* Pods_NCSoundHistogram_Example.framework */; };
+		B7E648041CF3A562007E9BA4 /* audio.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B7E648031CF3A562007E9BA4 /* audio.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		87C70A4C8CA71F2D3EB140BE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B172F6000F392BFA2FAB94ED /* Pods-NCSoundHistogram_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NCSoundHistogram_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NCSoundHistogram_Example/Pods-NCSoundHistogram_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B7E648031CF3A562007E9BA4 /* audio.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = audio.m4a; sourceTree = "<group>"; };
 		C6C37E942CF55462EA3363B0 /* Pods_NCSoundHistogram_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCSoundHistogram_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D576CB62B562F93A92E4F238 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FC5CE66DD3485DB978A77B9F /* Pods_NCSoundHistogram_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCSoundHistogram_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +146,7 @@
 				6003F59C195388D20070C39A /* NCAppDelegate.h */,
 				6003F59D195388D20070C39A /* NCAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				B7E648031CF3A562007E9BA4 /* audio.m4a */,
 				6003F5A5195388D20070C39A /* NCViewController.h */,
 				6003F5A6195388D20070C39A /* NCViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -279,6 +282,7 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				B7E648041CF3A562007E9BA4 /* audio.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +523,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -535,6 +540,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -7,6 +7,7 @@
 //
 
 #import "NCViewController.h"
+#import "NCSoundHistogram.h"
 
 @interface NCViewController ()
 
@@ -17,13 +18,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    NCSoundHistogram *soundHistogramView = [[NCSoundHistogram alloc] initWithFrame:CGRectMake(20, 20, 335, 150)];
+    soundHistogramView.waveColor = [UIColor redColor];
+    
+    //soundHistogramView.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:soundHistogramView];
+    
+    //NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"audio.m4a" ofType:nil]];
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"audio" withExtension:@"m4a"];
+
+    soundHistogramView.soundURL = url;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

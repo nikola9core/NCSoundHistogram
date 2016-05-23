@@ -1,0 +1,16 @@
+PODS:
+  - NCSoundHistogram (0.1.0)
+
+DEPENDENCIES:
+  - NCSoundHistogram (from `../`)
+
+EXTERNAL SOURCES:
+  NCSoundHistogram:
+    :path: ../
+
+SPEC CHECKSUMS:
+  NCSoundHistogram: 5c6cbbf5d38d28e8cb34102f4ea8d2a0c5215bd0
+
+PODFILE CHECKSUM: 3213a91e93f7f3de166bc67afbf4628467c9cff0
+
+COCOAPODS: 1.0.0

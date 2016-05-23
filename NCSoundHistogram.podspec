@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'NCSoundHistogram'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of NCSoundHistogram.'
+  s.summary          = 'Generates histogram view from audio file.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,15 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Subclass of UIView that renders discrete histogram view for a given audio file.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/NCSoundHistogram'
+  s.homepage         = 'https://github.com/nikola9core/NCSoundHistogram'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Nikola Corlija' => 'nikola9core@yahoo.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/NCSoundHistogram.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/nikola9core/NCSoundHistogram.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/nikola9core'
 
   s.ios.deployment_target = '8.0'
 

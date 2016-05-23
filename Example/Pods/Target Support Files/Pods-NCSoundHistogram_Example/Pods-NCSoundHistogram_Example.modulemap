@@ -1,0 +1,6 @@
+framework module Pods_NCSoundHistogram_Example {
+  umbrella header "Pods-NCSoundHistogram_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_NCSoundHistogram_Tests {
+  umbrella header "Pods-NCSoundHistogram_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

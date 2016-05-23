@@ -1,0 +1,22 @@
+{
+  "name": "NCSoundHistogram",
+  "version": "0.1.0",
+  "summary": "A short description of NCSoundHistogram.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/NCSoundHistogram",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Nikola Corlija": "nikola9core@yahoo.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/NCSoundHistogram.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "NCSoundHistogram/Classes/**/*"
+}

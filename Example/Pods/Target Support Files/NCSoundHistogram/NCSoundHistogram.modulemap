@@ -1,0 +1,6 @@
+framework module NCSoundHistogram {
+  umbrella header "NCSoundHistogram-umbrella.h"
+
+  export *
+  module * { export * }
+}

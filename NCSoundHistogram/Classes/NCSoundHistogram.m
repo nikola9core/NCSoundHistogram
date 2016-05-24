@@ -165,7 +165,7 @@
     
     [reader addOutput:output];
     
-    UInt32 sampleRate, channelCount;
+    UInt32 sampleRate, channelCount = 0;
     
     NSArray* formatDesc = songTrack.formatDescriptions;
     
@@ -210,14 +210,14 @@
                 CMBlockBufferCopyDataBytes(blockBufferRef, 0, length, data.mutableBytes);
                 
                 SInt16 * samples = (SInt16*) data.mutableBytes;
-                int sampleCount = length / bytesPerSample;
+                int sampleCount = (int) length / bytesPerSample;
                 
                 for (int i = 0; i < sampleCount; i++) {
                     SInt16 left = *samples++;
                     
                     totalLeft += left;
                     
-                    SInt16 right;
+                    SInt16 right = 0;
                     
                     if (channelCount == 2) {
                         right = *samples++;
@@ -253,7 +253,7 @@
     
     NSMutableData *adjustedSongData = [[NSMutableData alloc] init];
     
-    int sampleCount = fullSongData.length / 2; // sizeof(SInt16)
+    int sampleCount = (int) fullSongData.length / 2;
     int adjustFactor = ceilf((float)sampleCount / (self.width / (_drawSpaces ? 2.0 : 1.0)));
     
     SInt16* samples = (SInt16*) fullSongData.mutableBytes;
@@ -274,7 +274,7 @@
         i += adjustFactor;
     }
     
-    sampleCount = adjustedSongData.length / 2;
+    sampleCount = (int) adjustedSongData.length / 2;
     
     if (reader.status == AVAssetReaderStatusCompleted) {
         UIImage *image = [self drawImageFromSamples:(SInt16 *)adjustedSongData.bytes

@@ -12,6 +12,7 @@ Based on: https://github.com/faviomob/FVSoundWaveDemo
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 Screenshot:
+
 ![alt tag](https://ibin.co/2iCJQ7ZnEzfU.png)
 
 ## Requirements

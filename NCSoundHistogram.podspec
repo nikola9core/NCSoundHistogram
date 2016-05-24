@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NCSoundHistogram'
-  s.version          = '0.1.2'
-  s.summary          = 'Generates histogram view from audio file.'
+  s.version          = '0.1.3'
+  s.summary          = 'Generates discrete histogram view from audio file.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

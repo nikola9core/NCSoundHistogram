@@ -10,6 +10,8 @@ Based on: https://github.com/faviomob/FVSoundWaveDemo
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Screenshot:
+![alt tag](http://ibin.co/2iCIJ7Z4RfTE.png)
 
 ## Requirements
 
@@ -43,7 +45,7 @@ Swift
 import NCSoundHistogram
 
 let soundHistogramView = NCSoundHistogram.init(frame: self.view.frame)
-self.view.addSubview(soundHistogramView);
+self.view.addSubview(soundHistogramView)
 
 ```
 

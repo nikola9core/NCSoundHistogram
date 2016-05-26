@@ -7,17 +7,16 @@
 
 Based on https://github.com/faviomob/FVSoundWaveDemo with improvements:
 
-* dlg rnd
 * Added playing animation
-* Added property for setting bar line width
+* More customizations such setting bar line width
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-Screenshot:
+Example:
 
-![alt tag](https://ibin.co/2iCJQ7ZnEzfU.png)
+![alt tag](http://i.giphy.com/3o6EhD4JSv3oqYPrd6.gif)
 
 ## Requirements
 
@@ -39,6 +38,8 @@ Objective-C
 #import "NCSoundHistogram.h"
 
 NCSoundHistogram *soundHistogramView = [[NCSoundHistogram alloc] initWithFrame:self.view.frame];
+soundHistogramView.animationColor = [UIColor cyanColor];
+soundHistogramView.barLineWidth = 2.5;
 [self.view addSubview:soundHistogramView];
 
 NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"audio.m4a" ofType:nil]];

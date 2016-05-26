@@ -23,7 +23,7 @@
     soundHistogramView = [[NCSoundHistogram alloc] initWithFrame:CGRectMake(20, 50, 335, 100)];
     
     soundHistogramView.waveColor = [UIColor blackColor];
-    soundHistogramView.animationColor = [UIColor lightGrayColor];
+    soundHistogramView.animationColor = [UIColor cyanColor];
     soundHistogramView.drawSpaces = YES;
     soundHistogramView.barLineWidth = 2.5;
     
@@ -36,7 +36,7 @@
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"sound.m4a" ofType:nil]];
     soundHistogramView.soundURL = url;
     
-    [soundHistogramView animatePlayingWithDuration:10];
+    [soundHistogramView animatePlayingWithDuration:4];
 }
 
 @end

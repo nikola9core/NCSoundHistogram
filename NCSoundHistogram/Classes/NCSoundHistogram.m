@@ -324,7 +324,7 @@
     [UIView animateWithDuration:seconds delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
         tintedImageView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     } completion:^(BOOL finished) {
-        //
+        [tintedImageView removeFromSuperview];
     }];
 }
 

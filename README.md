@@ -5,7 +5,11 @@
 [![License](https://img.shields.io/cocoapods/l/NCSoundHistogram.svg?style=flat)](http://cocoapods.org/pods/NCSoundHistogram)
 [![Platform](https://img.shields.io/cocoapods/p/NCSoundHistogram.svg?style=flat)](http://cocoapods.org/pods/NCSoundHistogram)
 
-Based on: https://github.com/faviomob/FVSoundWaveDemo
+Based on https://github.com/faviomob/FVSoundWaveDemo with improvements:
+
+* dlg rnd
+* Added playing animation
+* Added property for setting bar line width
 
 ## Example
 

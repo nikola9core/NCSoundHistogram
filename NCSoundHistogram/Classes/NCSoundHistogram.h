@@ -13,7 +13,12 @@
 @property (nonatomic, strong) NSURL *soundURL;
 @property (nonatomic, assign) float progress;
 @property (nonatomic, strong) UIColor *waveColor;
+@property (nonatomic, strong) UIColor *animationColor;
 @property (nonatomic, strong) UIColor *progressColor;
 @property (nonatomic, assign) BOOL drawSpaces;
+@property (nonatomic, assign) float barLineWidth;
+
+-(UIImage *)getAsImage;
+-(void)animatePlayingWithDuration:(float)seconds;
 
 @end

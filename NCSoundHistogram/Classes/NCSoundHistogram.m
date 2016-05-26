@@ -13,8 +13,8 @@
 
 @implementation UIImage (Tint)
 
-- (UIImage *)tintedImageWithColor:(UIColor *)color
-{
+- (UIImage *)tintedImageWithColor:(UIColor *)color {
+    
     UIGraphicsBeginImageContextWithOptions(self.size, NO, self.scale);
     
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -59,9 +59,10 @@
     
     if (self) {
         self.backgroundColor = [UIColor clearColor];
-        
         self.waveColor = [[UIColor whiteColor] colorWithAlphaComponent:.8];
+        self.animationColor = [UIColor lightGrayColor];
         self.progressColor = [[UIColor whiteColor] colorWithAlphaComponent:1];
+        self.barLineWidth = 1.0;
         
         _drawSpaces = YES;
     }
@@ -72,8 +73,7 @@
     
     [super layoutSubviews];
     
-    if (_waveImageView == nil)
-    {
+    if (_waveImageView == nil) {
         _waveImageView = [[UIImageView alloc] initWithFrame:self.bounds];
         _progressImageView = [[UIImageView alloc] initWithFrame:self.bounds];
         
@@ -105,7 +105,7 @@
                          maxValue:(SInt16)maxValue
                       sampleCount:(NSInteger)sampleCount {
     
-    CGSize imageSize = CGSizeMake(sampleCount * (_drawSpaces ? 2 : 0), self.height);
+    CGSize imageSize = CGSizeMake(sampleCount * (_drawSpaces ? 2*_barLineWidth : 0), self.height);
     UIGraphicsBeginImageContextWithOptions(imageSize, NO, 0);
     CGContextRef context = UIGraphicsGetCurrentContext();
     
@@ -121,7 +121,7 @@
     
     CGContextFillRect(context, rect);
     
-    CGContextSetLineWidth(context, 1.0);
+    CGContextSetLineWidth(context, 1.0*_barLineWidth);
     
     float channelCenterY = imageSize.height / 2;
     float sampleAdjustmentFactor = imageSize.height / (float)maxValue;
@@ -131,8 +131,8 @@
         val = val * sampleAdjustmentFactor;
         if ((int)val == 0)
             val = 1.0; // draw dots instead of emptyness
-        CGContextMoveToPoint(context, i * (_drawSpaces ? 2 : 1), channelCenterY - val / 2.0);
-        CGContextAddLineToPoint(context, i * (_drawSpaces ? 2 : 1), channelCenterY + val / 2.0);
+        CGContextMoveToPoint(context, i * (_drawSpaces ? 2*_barLineWidth : 1*_barLineWidth), channelCenterY - val / 2.0);
+        CGContextAddLineToPoint(context, i * (_drawSpaces ? 2*_barLineWidth : 1*_barLineWidth), channelCenterY + val / 2.0);
         CGContextSetStrokeColorWithColor(context, waveColor);
         CGContextStrokePath(context);
     }
@@ -193,13 +193,11 @@
     NSInteger samplesPerPixel = 100; // enougth for most of ui and fast
     
     int buffersCount = 0;
-    while (reader.status == AVAssetReaderStatusReading)
-    {
+    while (reader.status == AVAssetReaderStatusReading) {
         AVAssetReaderTrackOutput * trackOutput = (AVAssetReaderTrackOutput *)[reader.outputs objectAtIndex:0];
         CMSampleBufferRef sampleBufferRef = [trackOutput copyNextSampleBuffer];
         
-        if (sampleBufferRef)
-        {
+        if (sampleBufferRef) {
             CMBlockBufferRef blockBufferRef = CMSampleBufferGetDataBuffer(sampleBufferRef);
             
             size_t length = CMBlockBufferGetDataLength(blockBufferRef);
@@ -254,9 +252,9 @@
     NSMutableData *adjustedSongData = [[NSMutableData alloc] init];
     
     int sampleCount = (int) fullSongData.length / 2;
-    int adjustFactor = ceilf((float)sampleCount / (self.width / (_drawSpaces ? 2.0 : 1.0)));
+    int adjustFactor = ceilf((float)sampleCount / (self.width / (_drawSpaces ? 2.0*_barLineWidth : 1.0*_barLineWidth)));
     
-    SInt16* samples = (SInt16*) fullSongData.mutableBytes;
+    SInt16 *samples = (SInt16*) fullSongData.mutableBytes;
     
     int i = 0;
     
@@ -285,7 +283,6 @@
     return nil;
 }
 
-
 - (NSURL*) soundURL {
     
     return _soundURL;
@@ -302,6 +299,33 @@
     
     _progressImageView.left = _waveImageView.left;
     _progressImageView.width = _waveImageView.width * progress;
+}
+
+-(UIImage *)getAsImage {
+    
+    UIGraphicsBeginImageContext(self.bounds.size);
+    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
+-(void)animatePlayingWithDuration:(float)seconds {
+    
+    UIImageView *tintedImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 0, self.frame.size.height)];
+    tintedImageView.image = [self.getAsImage imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    [tintedImageView setTintColor:self.animationColor];
+    [tintedImageView setContentMode:UIViewContentModeLeft];
+    tintedImageView.clipsToBounds = YES;
+    
+    [self addSubview:tintedImageView];
+    
+    [UIView animateWithDuration:seconds delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
+        tintedImageView.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
+    } completion:^(BOOL finished) {
+        //
+    }];
 }
 
 @end

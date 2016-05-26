@@ -1,5 +1,5 @@
 PODS:
-  - NCSoundHistogram (0.1.0)
+  - NCSoundHistogram (0.1.4)
 
 DEPENDENCIES:
   - NCSoundHistogram (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  NCSoundHistogram: 2cd2ef5a651151e2c9c7d0395f664f2c8f83d6fd
+  NCSoundHistogram: f82c7f156800d7aeab5a6880a6c6a47ad2f58935
 
 PODFILE CHECKSUM: 3213a91e93f7f3de166bc67afbf4628467c9cff0
 

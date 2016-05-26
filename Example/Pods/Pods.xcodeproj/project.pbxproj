@@ -7,19 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F5FD4556DFEB575223D8D58C06C0F59 /* NCSoundHistogram.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 572135E89086DB87B5F838812EAFEC5B /* NCSoundHistogram.bundle */; };
+		0EF26C07FF7AF86D574379A8BBABF7F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		197AD25600680B274FF3683FA9E80956 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		315795C49A21369B0E1BEC9D0B9BC9D2 /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E20FA348249816CCF71410832F710F /* UIView+Geometry.m */; };
-		38E4ABEAC6C455E4A2DB1511A54F1068 /* NCSoundHistogram.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A65594443C7EFEA678AF8B00AFDB06 /* NCSoundHistogram.m */; };
 		4B152F40D4DF168ACDE24D03CA93889A /* Pods-NCSoundHistogram_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A86FAE17B2F0D8362D7F203373D15E18 /* Pods-NCSoundHistogram_Tests-dummy.m */; };
-		6AE1977FA9B989D58B8731349425E9EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		6C4E787D4E44485313E0375DAB2CD670 /* NCSoundHistogram.h in Headers */ = {isa = PBXBuildFile; fileRef = 050B810A774610F084DD0B4563E9102D /* NCSoundHistogram.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6372293B01BC59B454297D7B1616BA23 /* NCSoundHistogram.h in Headers */ = {isa = PBXBuildFile; fileRef = B9FBB4DEB55B4C86AEDD61FC612562CB /* NCSoundHistogram.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DD0A548183FD5FE3C3B0FE50E3F9B3D /* Pods-NCSoundHistogram_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 272BDF3E42EBC322DB1397771B0D5958 /* Pods-NCSoundHistogram_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7C40AC04290CFEA08C3CCD1A9B3E3C0B /* UIView+Geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = C9BA2FF7E33DD3943BF203F362F6FDCC /* UIView+Geometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FC0D280C2969C82CDF54617BC8938A6 /* NCSoundHistogram-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 800D6C2D811F423F8F1E3D263259ECA8 /* NCSoundHistogram-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71E6B50FF747539C1C2A0FA6538633C0 /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7CFD85C1D9AA1E06824D729AB007B8 /* UIView+Geometry.m */; };
+		8076B17C4EC6A07579AD0EC55306FEF4 /* NCSoundHistogram.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3501CA7DDA2A19D89978972E31520B /* NCSoundHistogram.m */; };
 		97106742987AB92B35D40DB9CCB03BB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		B0D34FF99EB158D797C7CE9B44D78DFF /* NCSoundHistogram-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2CA99209428DBE2F6AFC4C7FFE7CE8F /* NCSoundHistogram-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9E871343C646B42EF00F23B56359F75 /* NCSoundHistogram-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E8884F1722A0CC13E763BFBE022F3A /* NCSoundHistogram-dummy.m */; };
+		D7ADAA39F65C15E815D9C66D2DEDB249 /* UIView+Geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E1094A60F6204574DB24C9976A20980 /* UIView+Geometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E61570F71509BF2161159371A7A61303 /* Pods-NCSoundHistogram_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E681C3B396482044D26448B4AEB3A866 /* Pods-NCSoundHistogram_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F636CC15454E6602E1121DF468EE19C2 /* NCSoundHistogram-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4841F8CC4D83A7665B288D618176C1A4 /* NCSoundHistogram-dummy.m */; };
 		FA82D627E6D6568FDEC62E28BF7D7FA5 /* Pods-NCSoundHistogram_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE05DFA9DF932BE2962B4B7BF81B8BA /* Pods-NCSoundHistogram_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -28,79 +27,63 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 80AAEEB910B70A73AF1F26A50EEDDD64;
+			remoteGlobalIDString = 19100365A97EC5596BEDA40B53C677DD;
 			remoteInfo = NCSoundHistogram;
-		};
-		CF784053E104144CA0817DC9770721E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 913198BCCE9291FF0BB3E8836B5442AB;
-			remoteInfo = "NCSoundHistogram-NCSoundHistogram";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		050B810A774610F084DD0B4563E9102D /* NCSoundHistogram.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NCSoundHistogram.h; sourceTree = "<group>"; };
+		0A7A568B14B06DCC3FEDF12D700AC29C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C193CA898389595BE142EE37315A063 /* NCSoundHistogram.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NCSoundHistogram.xcconfig; sourceTree = "<group>"; };
 		13D5A6A8EC2B4C0B36F31CFD4D4E84E6 /* Pods-NCSoundHistogram_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NCSoundHistogram_Example.release.xcconfig"; sourceTree = "<group>"; };
-		18051DC349F404944B15504CEF1B69F6 /* Pods_NCSoundHistogram_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCSoundHistogram_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B73ED33FCF5476ABD159B8EAFAA77B7 /* NCSoundHistogram-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NCSoundHistogram-prefix.pch"; sourceTree = "<group>"; };
 		25570209F752FB3EBD88A7295C74F0C0 /* Pods-NCSoundHistogram_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NCSoundHistogram_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		272BDF3E42EBC322DB1397771B0D5958 /* Pods-NCSoundHistogram_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NCSoundHistogram_Example-umbrella.h"; sourceTree = "<group>"; };
 		2C0056EFEC81818A14BC7C2354427A89 /* Pods-NCSoundHistogram_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NCSoundHistogram_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		31C7EBFFB84F9A4C809086A33C6E7576 /* Pods-NCSoundHistogram_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NCSoundHistogram_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4841F8CC4D83A7665B288D618176C1A4 /* NCSoundHistogram-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NCSoundHistogram-dummy.m"; sourceTree = "<group>"; };
+		3E1094A60F6204574DB24C9976A20980 /* UIView+Geometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Geometry.h"; sourceTree = "<group>"; };
+		46E8884F1722A0CC13E763BFBE022F3A /* NCSoundHistogram-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NCSoundHistogram-dummy.m"; sourceTree = "<group>"; };
 		4D96C7BEAF8E4B5718337949615FDB33 /* Pods-NCSoundHistogram_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NCSoundHistogram_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		572135E89086DB87B5F838812EAFEC5B /* NCSoundHistogram.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NCSoundHistogram.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		5ACE6EA5BDBE4FEA2051E61302781888 /* NCSoundHistogram.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NCSoundHistogram.modulemap; sourceTree = "<group>"; };
 		5B75D715CD2B4A2ABDBB10020B6E4C8D /* Pods-NCSoundHistogram_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NCSoundHistogram_Tests-resources.sh"; sourceTree = "<group>"; };
+		60F9434E98E5CD1085AECBFE50CE8A9B /* Pods_NCSoundHistogram_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCSoundHistogram_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B3CC130E91B0D8CB1DC2AF7BBFCE5C /* Pods-NCSoundHistogram_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NCSoundHistogram_Example-frameworks.sh"; sourceTree = "<group>"; };
-		65A65594443C7EFEA678AF8B00AFDB06 /* NCSoundHistogram.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NCSoundHistogram.m; sourceTree = "<group>"; };
-		65CD7851B3831BCDB70712FB444F0A51 /* NCSoundHistogram.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NCSoundHistogram.xcconfig; sourceTree = "<group>"; };
 		7514DDA34DA14A9BBA2835BBEE2C03CB /* Pods-NCSoundHistogram_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NCSoundHistogram_Example-resources.sh"; sourceTree = "<group>"; };
 		7A8ADAFFBF9473AE07CDE182287464D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CB5917D1636F997858122EB9F452A7E /* NCSoundHistogram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NCSoundHistogram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		800D6C2D811F423F8F1E3D263259ECA8 /* NCSoundHistogram-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NCSoundHistogram-umbrella.h"; sourceTree = "<group>"; };
 		8936FCD6CF8BBBD9B59442E672D9456A /* Pods-NCSoundHistogram_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NCSoundHistogram_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D3501CA7DDA2A19D89978972E31520B /* NCSoundHistogram.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NCSoundHistogram.m; sourceTree = "<group>"; };
+		A528EDD51EC32AB893B0FBBD262ED594 /* NCSoundHistogram.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NCSoundHistogram.modulemap; sourceTree = "<group>"; };
 		A61F2B58CBD68E62669D1900D3A1C3F3 /* Pods-NCSoundHistogram_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NCSoundHistogram_Tests.modulemap"; sourceTree = "<group>"; };
 		A86FAE17B2F0D8362D7F203373D15E18 /* Pods-NCSoundHistogram_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NCSoundHistogram_Tests-dummy.m"; sourceTree = "<group>"; };
 		AD96D8B08581A221262268D78E4A807F /* Pods-NCSoundHistogram_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NCSoundHistogram_Example.modulemap"; sourceTree = "<group>"; };
 		B2664CBA75E44B0F3067A3E1A2A3AA70 /* Pods-NCSoundHistogram_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NCSoundHistogram_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B9FBB4DEB55B4C86AEDD61FC612562CB /* NCSoundHistogram.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NCSoundHistogram.h; sourceTree = "<group>"; };
 		BE97DA6E69E5CCB0C77C31C848BF7EC8 /* Pods-NCSoundHistogram_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NCSoundHistogram_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C9BA2FF7E33DD3943BF203F362F6FDCC /* UIView+Geometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Geometry.h"; sourceTree = "<group>"; };
+		C671C7A78345FDF080CD04FD556D58B2 /* NCSoundHistogram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NCSoundHistogram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8CC2D62733C61D8BFF3257A7C3B65E4 /* NCSoundHistogram-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NCSoundHistogram-prefix.pch"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D13978CB1995775CAFCBA7FC1D08FB75 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3E20FA348249816CCF71410832F710F /* UIView+Geometry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Geometry.m"; sourceTree = "<group>"; };
+		DD7CFD85C1D9AA1E06824D729AB007B8 /* UIView+Geometry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Geometry.m"; sourceTree = "<group>"; };
 		E681C3B396482044D26448B4AEB3A866 /* Pods-NCSoundHistogram_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NCSoundHistogram_Tests-umbrella.h"; sourceTree = "<group>"; };
-		E6A5006F5D372927DBAF68A79D49F1FE /* ResourceBundle-NCSoundHistogram-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-NCSoundHistogram-Info.plist"; sourceTree = "<group>"; };
 		EBE05DFA9DF932BE2962B4B7BF81B8BA /* Pods-NCSoundHistogram_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NCSoundHistogram_Example-dummy.m"; sourceTree = "<group>"; };
-		ECED1CA678B60933473F2880D643C6F1 /* Pods_NCSoundHistogram_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCSoundHistogram_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2CA99209428DBE2F6AFC4C7FFE7CE8F /* NCSoundHistogram-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NCSoundHistogram-umbrella.h"; sourceTree = "<group>"; };
-		F69A92D42C4D6B9B4611D864C702C95E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6F2B9591F05F548531BED50C0BC7E43 /* Pods_NCSoundHistogram_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCSoundHistogram_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE76627DF57E256A1FF235BD2431165D /* Pods-NCSoundHistogram_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NCSoundHistogram_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0551996202BBF82C7DF9507492B63324 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF26C07FF7AF86D574379A8BBABF7F9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0781DC03470AFD911E51523DD082EA49 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				97106742987AB92B35D40DB9CCB03BB7 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		815DCD9A4F88495C9777E8FEB9385D43 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADACB10ABEBD3E6B72EF465BC32BCF02 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6AE1977FA9B989D58B8731349425E9EF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,38 +98,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04507166646FED5DF2A4F5D5C9FE7A3D /* Support Files */ = {
+		0F1D3B99680A00ADD3223C46DAECE8E5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F69A92D42C4D6B9B4611D864C702C95E /* Info.plist */,
-				5ACE6EA5BDBE4FEA2051E61302781888 /* NCSoundHistogram.modulemap */,
-				65CD7851B3831BCDB70712FB444F0A51 /* NCSoundHistogram.xcconfig */,
-				4841F8CC4D83A7665B288D618176C1A4 /* NCSoundHistogram-dummy.m */,
-				1B73ED33FCF5476ABD159B8EAFAA77B7 /* NCSoundHistogram-prefix.pch */,
-				F2CA99209428DBE2F6AFC4C7FFE7CE8F /* NCSoundHistogram-umbrella.h */,
-				E6A5006F5D372927DBAF68A79D49F1FE /* ResourceBundle-NCSoundHistogram-Info.plist */,
+				0A7A568B14B06DCC3FEDF12D700AC29C /* Info.plist */,
+				A528EDD51EC32AB893B0FBBD262ED594 /* NCSoundHistogram.modulemap */,
+				0C193CA898389595BE142EE37315A063 /* NCSoundHistogram.xcconfig */,
+				46E8884F1722A0CC13E763BFBE022F3A /* NCSoundHistogram-dummy.m */,
+				C8CC2D62733C61D8BFF3257A7C3B65E4 /* NCSoundHistogram-prefix.pch */,
+				800D6C2D811F423F8F1E3D263259ECA8 /* NCSoundHistogram-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/NCSoundHistogram";
-			sourceTree = "<group>";
-		};
-		13D9824EC391D5CC4522EE2145D7CA89 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				572135E89086DB87B5F838812EAFEC5B /* NCSoundHistogram.bundle */,
-				7CB5917D1636F997858122EB9F452A7E /* NCSoundHistogram.framework */,
-				ECED1CA678B60933473F2880D643C6F1 /* Pods_NCSoundHistogram_Example.framework */,
-				18051DC349F404944B15504CEF1B69F6 /* Pods_NCSoundHistogram_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2AC0A32ECE0715EA95F23962B366D29B /* NCSoundHistogram */ = {
-			isa = PBXGroup;
-			children = (
-				E09D7BDB2A8D16CD161822D77F10B421 /* Classes */,
-			);
-			path = NCSoundHistogram;
 			sourceTree = "<group>";
 		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
@@ -175,10 +138,20 @@
 			path = "Target Support Files/Pods-NCSoundHistogram_Tests";
 			sourceTree = "<group>";
 		};
+		76305BE6C681F44A7DD7DF10B1B202DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C671C7A78345FDF080CD04FD556D58B2 /* NCSoundHistogram.framework */,
+				60F9434E98E5CD1085AECBFE50CE8A9B /* Pods_NCSoundHistogram_Example.framework */,
+				F6F2B9591F05F548531BED50C0BC7E43 /* Pods_NCSoundHistogram_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		78F55E47BE342151B42263DACB246A11 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C3BD4BBB9B1B4E30B33D855C9BD347BB /* NCSoundHistogram */,
+				CA3F8C23E784EB28EC9296F3400C4FB7 /* NCSoundHistogram */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -189,9 +162,17 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				78F55E47BE342151B42263DACB246A11 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				13D9824EC391D5CC4522EE2145D7CA89 /* Products */,
+				76305BE6C681F44A7DD7DF10B1B202DA /* Products */,
 				DDDE2EE4DE34C6FA25AD36C5434A2D63 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		B6457B63769B8E7A5511C9E6C23442B9 /* NCSoundHistogram */ = {
+			isa = PBXGroup;
+			children = (
+				E4E0F3FEDF2A68F61DBEFB8E7DBDA45C /* Classes */,
+			);
+			path = NCSoundHistogram;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -202,11 +183,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C3BD4BBB9B1B4E30B33D855C9BD347BB /* NCSoundHistogram */ = {
+		CA3F8C23E784EB28EC9296F3400C4FB7 /* NCSoundHistogram */ = {
 			isa = PBXGroup;
 			children = (
-				2AC0A32ECE0715EA95F23962B366D29B /* NCSoundHistogram */,
-				04507166646FED5DF2A4F5D5C9FE7A3D /* Support Files */,
+				B6457B63769B8E7A5511C9E6C23442B9 /* NCSoundHistogram */,
+				0F1D3B99680A00ADD3223C46DAECE8E5 /* Support Files */,
 			);
 			name = NCSoundHistogram;
 			path = ../..;
@@ -221,13 +202,13 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		E09D7BDB2A8D16CD161822D77F10B421 /* Classes */ = {
+		E4E0F3FEDF2A68F61DBEFB8E7DBDA45C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				050B810A774610F084DD0B4563E9102D /* NCSoundHistogram.h */,
-				65A65594443C7EFEA678AF8B00AFDB06 /* NCSoundHistogram.m */,
-				C9BA2FF7E33DD3943BF203F362F6FDCC /* UIView+Geometry.h */,
-				D3E20FA348249816CCF71410832F710F /* UIView+Geometry.m */,
+				B9FBB4DEB55B4C86AEDD61FC612562CB /* NCSoundHistogram.h */,
+				9D3501CA7DDA2A19D89978972E31520B /* NCSoundHistogram.m */,
+				3E1094A60F6204574DB24C9976A20980 /* UIView+Geometry.h */,
+				DD7CFD85C1D9AA1E06824D729AB007B8 /* UIView+Geometry.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -253,16 +234,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		467931EB7F03447409F81E85399E9746 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B0D34FF99EB158D797C7CE9B44D78DFF /* NCSoundHistogram-umbrella.h in Headers */,
-				6C4E787D4E44485313E0375DAB2CD670 /* NCSoundHistogram.h in Headers */,
-				7C40AC04290CFEA08C3CCD1A9B3E3C0B /* UIView+Geometry.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		56265D46BDE244E134EA6FBD061C6E9F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,44 +250,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AEBE5EEB6A9665BC141F447F1555B46F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FC0D280C2969C82CDF54617BC8938A6 /* NCSoundHistogram-umbrella.h in Headers */,
+				6372293B01BC59B454297D7B1616BA23 /* NCSoundHistogram.h in Headers */,
+				D7ADAA39F65C15E815D9C66D2DEDB249 /* UIView+Geometry.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		80AAEEB910B70A73AF1F26A50EEDDD64 /* NCSoundHistogram */ = {
+		19100365A97EC5596BEDA40B53C677DD /* NCSoundHistogram */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E5A8F75ABA2C9B5F397137D0074D533A /* Build configuration list for PBXNativeTarget "NCSoundHistogram" */;
+			buildConfigurationList = 384BBDED348011514B6520D40DA4A2BF /* Build configuration list for PBXNativeTarget "NCSoundHistogram" */;
 			buildPhases = (
-				E5733974625689CCAD82FA95B84C9689 /* Sources */,
-				ADACB10ABEBD3E6B72EF465BC32BCF02 /* Frameworks */,
-				DD44F1DB5DC0E01A56C637425A68FF3C /* Resources */,
-				467931EB7F03447409F81E85399E9746 /* Headers */,
+				1474C1BD3CCDA6ED537B7E926F5AC113 /* Sources */,
+				0551996202BBF82C7DF9507492B63324 /* Frameworks */,
+				AEBE5EEB6A9665BC141F447F1555B46F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DF7F394ED1126D9554C95879E76B1B25 /* PBXTargetDependency */,
 			);
 			name = NCSoundHistogram;
 			productName = NCSoundHistogram;
-			productReference = 7CB5917D1636F997858122EB9F452A7E /* NCSoundHistogram.framework */;
+			productReference = C671C7A78345FDF080CD04FD556D58B2 /* NCSoundHistogram.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		913198BCCE9291FF0BB3E8836B5442AB /* NCSoundHistogram-NCSoundHistogram */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 13CD0D42853F1A82280D17530E77A74E /* Build configuration list for PBXNativeTarget "NCSoundHistogram-NCSoundHistogram" */;
-			buildPhases = (
-				11AB928E4E2B2E9B1FD57992053DB24F /* Sources */,
-				815DCD9A4F88495C9777E8FEB9385D43 /* Frameworks */,
-				7D128ED26DBBD75A7079CFEEF3D6B80A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "NCSoundHistogram-NCSoundHistogram";
-			productName = "NCSoundHistogram-NCSoundHistogram";
-			productReference = 572135E89086DB87B5F838812EAFEC5B /* NCSoundHistogram.bundle */;
-			productType = "com.apple.product-type.bundle";
 		};
 		B0024E10F9F786754881FC71D0E9F216 /* Pods-NCSoundHistogram_Example */ = {
 			isa = PBXNativeTarget;
@@ -333,7 +295,7 @@
 			);
 			name = "Pods-NCSoundHistogram_Example";
 			productName = "Pods-NCSoundHistogram_Example";
-			productReference = ECED1CA678B60933473F2880D643C6F1 /* Pods_NCSoundHistogram_Example.framework */;
+			productReference = 60F9434E98E5CD1085AECBFE50CE8A9B /* Pods_NCSoundHistogram_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D22D4A2F1536DCABC36551C4F96FF050 /* Pods-NCSoundHistogram_Tests */ = {
@@ -350,7 +312,7 @@
 			);
 			name = "Pods-NCSoundHistogram_Tests";
 			productName = "Pods-NCSoundHistogram_Tests";
-			productReference = 18051DC349F404944B15504CEF1B69F6 /* Pods_NCSoundHistogram_Tests.framework */;
+			productReference = F6F2B9591F05F548531BED50C0BC7E43 /* Pods_NCSoundHistogram_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -370,41 +332,25 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 13D9824EC391D5CC4522EE2145D7CA89 /* Products */;
+			productRefGroup = 76305BE6C681F44A7DD7DF10B1B202DA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				80AAEEB910B70A73AF1F26A50EEDDD64 /* NCSoundHistogram */,
-				913198BCCE9291FF0BB3E8836B5442AB /* NCSoundHistogram-NCSoundHistogram */,
+				19100365A97EC5596BEDA40B53C677DD /* NCSoundHistogram */,
 				B0024E10F9F786754881FC71D0E9F216 /* Pods-NCSoundHistogram_Example */,
 				D22D4A2F1536DCABC36551C4F96FF050 /* Pods-NCSoundHistogram_Tests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		7D128ED26DBBD75A7079CFEEF3D6B80A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD44F1DB5DC0E01A56C637425A68FF3C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0F5FD4556DFEB575223D8D58C06C0F59 /* NCSoundHistogram.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		11AB928E4E2B2E9B1FD57992053DB24F /* Sources */ = {
+		1474C1BD3CCDA6ED537B7E926F5AC113 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9E871343C646B42EF00F23B56359F75 /* NCSoundHistogram-dummy.m in Sources */,
+				8076B17C4EC6A07579AD0EC55306FEF4 /* NCSoundHistogram.m in Sources */,
+				71E6B50FF747539C1C2A0FA6538633C0 /* UIView+Geometry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,29 +370,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E5733974625689CCAD82FA95B84C9689 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F636CC15454E6602E1121DF468EE19C2 /* NCSoundHistogram-dummy.m in Sources */,
-				38E4ABEAC6C455E4A2DB1511A54F1068 /* NCSoundHistogram.m in Sources */,
-				315795C49A21369B0E1BEC9D0B9BC9D2 /* UIView+Geometry.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DF7F394ED1126D9554C95879E76B1B25 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "NCSoundHistogram-NCSoundHistogram";
-			target = 913198BCCE9291FF0BB3E8836B5442AB /* NCSoundHistogram-NCSoundHistogram */;
-			targetProxy = CF784053E104144CA0817DC9770721E7 /* PBXContainerItemProxy */;
-		};
 		E67F7F4535DDC9D7E88D971CED3FD3BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NCSoundHistogram;
-			target = 80AAEEB910B70A73AF1F26A50EEDDD64 /* NCSoundHistogram */;
+			target = 19100365A97EC5596BEDA40B53C677DD /* NCSoundHistogram */;
 			targetProxy = AE015C8CDC02DDADB7F33EFE5FEA45BA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -477,35 +407,6 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_NCSoundHistogram_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		06208C10CBA40F25381FC042AF6874E6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65CD7851B3831BCDB70712FB444F0A51 /* NCSoundHistogram.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/NCSoundHistogram/NCSoundHistogram-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NCSoundHistogram/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/NCSoundHistogram/NCSoundHistogram.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = NCSoundHistogram;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -551,6 +452,35 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		150FB276C52A2F125F5A8858B01F51D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C193CA898389595BE142EE37315A063 /* NCSoundHistogram.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NCSoundHistogram/NCSoundHistogram-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NCSoundHistogram/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NCSoundHistogram/NCSoundHistogram.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NCSoundHistogram;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		3B5353F0EBBA33AB99732D1B0243211A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -617,40 +547,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		837A16C397DC4880A8219C1F9676E5BE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65CD7851B3831BCDB70712FB444F0A51 /* NCSoundHistogram.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/NCSoundHistogram";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/NCSoundHistogram/ResourceBundle-NCSoundHistogram-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = NCSoundHistogram;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		992B273C0905B26D36560FC94D258E94 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65CD7851B3831BCDB70712FB444F0A51 /* NCSoundHistogram.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/NCSoundHistogram";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/NCSoundHistogram/ResourceBundle-NCSoundHistogram-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = NCSoundHistogram;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
 		};
 		D038B6AEAE5A0CFFBF59759F0D0A6A16 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -727,9 +623,9 @@
 			};
 			name = Debug;
 		};
-		E3725A7D06A5008E3E66088CB7D8B601 /* Release */ = {
+		E67E5DD0323D55242893BD4C5FD436B8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65CD7851B3831BCDB70712FB444F0A51 /* NCSoundHistogram.xcconfig */;
+			baseConfigurationReference = 0C193CA898389595BE142EE37315A063 /* NCSoundHistogram.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -759,15 +655,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13CD0D42853F1A82280D17530E77A74E /* Build configuration list for PBXNativeTarget "NCSoundHistogram-NCSoundHistogram" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				992B273C0905B26D36560FC94D258E94 /* Debug */,
-				837A16C397DC4880A8219C1F9676E5BE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -777,20 +664,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		384BBDED348011514B6520D40DA4A2BF /* Build configuration list for PBXNativeTarget "NCSoundHistogram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				150FB276C52A2F125F5A8858B01F51D2 /* Debug */,
+				E67E5DD0323D55242893BD4C5FD436B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8BCA06671CE78CD31B10EFA490830712 /* Build configuration list for PBXNativeTarget "Pods-NCSoundHistogram_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D038B6AEAE5A0CFFBF59759F0D0A6A16 /* Debug */,
 				3B5353F0EBBA33AB99732D1B0243211A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E5A8F75ABA2C9B5F397137D0074D533A /* Build configuration list for PBXNativeTarget "NCSoundHistogram" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				06208C10CBA40F25381FC042AF6874E6 /* Debug */,
-				E3725A7D06A5008E3E66088CB7D8B601 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

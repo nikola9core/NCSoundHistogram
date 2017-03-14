@@ -44,6 +44,7 @@ soundHistogramView.barLineWidth = 2.5;
 
 NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"audio.m4a" ofType:nil]];
 soundHistogramView.soundURL = url;
+[soundHistogramView animatePlayingWithDuration:4];
 
 ```
 
